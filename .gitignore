@@ -1,5 +1,7 @@
 __pycache__
+zippedData
 zippedData/*
+.ipynb_checkpoints/*
 project_v1.ipynb
 project_v2.ipynb
 cmmds.txt
