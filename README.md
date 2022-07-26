@@ -43,4 +43,27 @@ The rest of two csv files *rt.movie_info.tsv* and *rt.reviews.tsv* contain infor
 ## What else I am looking at now
 I merged the dataframe that I created from SQL database as described above with the *tn.movie_budgets.csv*. This now gives me info about a subset of movies that have profit, genre, popularity and average rating info. I am going to see if I can get some meaningful insight from this. 
 
+## Recommendations
+* ***Best Genre***
 
+The plot below shows the average profit as a function of genre and I also plotted average ratings as a function of genre.
+
+![Best Genre](https://github.com/deepssharma/My_Phase1_Project/blob/master/figs/genres_profits_ratings.png)
+I was curious to see that based on the data that we have which movie was the most profitable. So I made the below plot that shows top 20 most protoable movies.Based on this plot, ***Avatar*** turns out to be most profitable movie followed by Avengers infinity wars. However, Avengers seems to be most popular and has higher vote average. I can think of one reason for this discrepancy. Avatar was released in 2009 and Avengers in 2018. In 2009 I would guess %age of people who were social media savvy was small and so the votes garnered by Avatar are less. Just a wild guess!
+
+Both these and the next couple of movies in order are either sci-fi or action thriller. This plot together with the genre plot above suggest that ***sci-fi/anime/action*** movies are more profitable than other genres!
+![Best Movie](https://github.com/deepssharma/My_Phase1_Project/blob/master/figs/most_profitable_movie.png)
+
+* ***Best Director***
+
+ The plot below shows the top 10 most profitable directors.  Based on this plot I would suggest ***Russo brothers*** as the most profitable director duo. 
+ 
+![Profitable Director](https://github.com/deepssharma/My_Phase1_Project/blob/master/figs/most_profitable_director.png)
+
+* ***Best time of year for movie release***
+
+The plot below shows the average profit for different time periods of an year. ***Summer months between May to July*** seem to be most profitable. This makes sense as that is the time when people are having vacations and enjoying. The second most profitable months seem to be Nov to Jan which are holiday months.
+The two different bars represent two dtaframes (one is only using the Box office DB and it has more entries), the other is the merged dataframe between 
+Box office DB and IMDB sql database  and it has lesser entries as compared to just Box Office DB. If I could I would like to add more data, but that is something that can be done later in the future
+
+![Profitable Time of Year](https://github.com/deepssharma/My_Phase1_Project/blob/master/figs/most_profitable_time_of_year.png)
