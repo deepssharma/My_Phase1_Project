@@ -41,7 +41,9 @@ The plot below shows the average profit as a function of genre and I also plotte
 ![Best Genre](https://github.com/deepssharma/My_Phase1_Project/blob/master/figs/genres_profits_ratings.png)
 I was curious to see that based on the data that we have which movie was the most profitable. So I made the below plot that shows top 20 most protoable movies.Based on this plot, ***Avatar*** turns out to be most profitable movie followed by Avengers infinity wars. However, Avengers seems to be most popular and has higher vote average. I can think of one reason for this discrepancy. Avatar was released in 2009 and Avengers in 2018. In 2009 I would guess %age of people who were social media savvy was small and so the votes garnered by Avatar are less. Just a wild guess!
 
-Both these and the next couple of movies in order are either sci-fi or action thriller. This plot together with the genre plot above suggest that ***sci-fi/anime/action*** movies are more profitable than other genres!
+Both these movies and the next couple of movies in order are either sci-fi or action thriller. The values on y-axis are normalized values by mean for the given variable (i.e. profit, popualrity, vote average). What I mean by this is as follows: e.g. profit for each movie was divided by average profit dervied by all the movies, and likewise for popularity, vote average etc. I did this so that I can overlay all three variables on the same plot. Afterwards I relaised that I could use the normalize function from numpy.
+
+This plot together with the genre plot above suggest that ***sci-fi/anime/action*** movies are more profitable than other genres!
 ![Best Movie](https://github.com/deepssharma/My_Phase1_Project/blob/master/figs/most_profitable_movie.png)
 
 * ***Best Director***
@@ -53,15 +55,20 @@ Both these and the next couple of movies in order are either sci-fi or action th
 * ***Best time of year for movie release***
 
 The plot below shows the average profit for different time periods of an year. ***Summer months between May to July*** seem to be most profitable. This makes sense as that is the time when people are having vacations and enjoying. The second most profitable months seem to be Nov to Jan which are holiday months.
-The two different bars represent two dtaframes (one is only using the Box office DB and it has more entries), the other is the merged dataframe between 
+The two different bars represent two dataframes (one is only using the Box office DB and it has more entries), the other is the merged dataframe between 
 Box office DB and IMDB sql database  and it has lesser entries as compared to just Box Office DB. If I could I would like to add more data, but that is something that can be done later in the future
 
 ![Profitable Time of Year](https://github.com/deepssharma/My_Phase1_Project/blob/master/figs/most_profitable_time_of_year.png)
+
+### Conclusions:
+Based on my analysis, I have found that **sci-fi/animation** movies are most profitable and popular movies. This can be seen from the plots that show average profit as a function of profit, and also the plot showing the most profitable movie, **Avatar followed by Averngers Infinity wars**, both of which belong to sci-fi and/pr anime category. **Russo brothers**, on average, are most profitable director duo, and movies released during summer months, **May to July** are on average are more pofitable.
+
+So I would suggest based on these findings to make a **sci-fi/anime movie with Russo brothers and release it during the months from May to July** to maximize the chances of profitabilty 
 
 ### Future work
 * First of all I would like to get my hands on more data. The websites listed certainly have lot more data. I would use API or if possible direct download the data.
 * Figure out the keys for Rotton tomatoes data and repeat the analysis to see if I get same results as above! This is important since a lot of times results from large dataset are not what you get from a small data sample!
 * Look more at the average ratings and or popularity  and profits and see if they are correlated !
 * Check if the foreign market behaves differently than the US market.
-* And some more....!
-* 
+* Also look at the  actors and writes as a fuction of profits and ratings
+* And probably some more
