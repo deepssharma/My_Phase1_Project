@@ -8,7 +8,7 @@ We were provided with various files from different sources: ***IMDB, Rotton Toma
 * The rotton tomatoes and TheMovieDB contained info about ratings, votes, reviews etc etc. However, they used keywords for genres,and movie names and in order to properly decode them I need to probably download more data or use API from their websites. I spent an extensive amount of time to get some results from these files, but without further inormation, and merging the dataframes using *release dates* or *other parameters* made it cumbersome, as well as, generated wrong information. So the results presented below are mostly derived from ***IMDB and The Numbers*** files. The jupyter file contains all the different things that I tried wiith these datafiles.
 
 
-## Some analysis details
+## Methodology
 I joined the data-tables movie_basics, movie_ratings, persons , principals and directors  and made one big dataframe. I removed duplicates and NAN values. 
 I had to merge some entries where you have multiple directors for the same movie. 
 My goal was to deduce the genre information, and look at average ratings and votes for those genres. First of all,  There is no clear demarcation for genres as a given movie can fall into different categories. So I sliced the dataframes into different genres based on my definitions like, Action, comedy, scifi, drama, romance, documentary etc).
@@ -60,7 +60,7 @@ Box office DB and IMDB sql database  and it has lesser entries as compared to ju
 
 ![Profitable Time of Year](https://github.com/deepssharma/My_Phase1_Project/blob/master/figs/most_profitable_time_of_year.png)
 
-### Conclusions:
+### Final Conclusion:
 Based on my analysis, I have found that **sci-fi/animation** movies are most profitable and popular movies. This can be seen from the plots that show average profit as a function of profit, and also the plot showing the most profitable movie, **Avatar followed by Averngers Infinity wars**, both of which belong to sci-fi and/pr anime category. **Russo brothers**, on average, are most profitable director duo, and movies released during summer months, **May to July** are on average are more pofitable.
 
 So I would suggest based on these findings to make a **sci-fi/anime movie with Russo brothers and release it during the months from May to July** to maximize the chances of profitabilty 
