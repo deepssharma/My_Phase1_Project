@@ -44,7 +44,7 @@ I was curious to see that based on the data that we have which movie was the mos
 Both these movies and the next couple of movies in order are either sci-fi or action thriller. The values on y-axis are normalized values by mean for the given variable (i.e. profit, popualrity, vote average). What I mean by this is as follows: e.g. profit for each movie was divided by average profit dervied by all the movies, and likewise for popularity, vote average etc. I did this so that I can overlay all three variables on the same plot. Afterwards I relaised that I could use the normalize function from numpy.
 
 This plot together with the genre plot above suggest that ***sci-fi/anime/action*** movies are more profitable than other genres!
-![Best Movie](https://github.com/deepssharma/My_Phase1_Project/blob/master/figs/most_profitable_movie.png)
+![Best Movie](https://github.com/deepssharma/My_Phase1_Project/blob/master/figs/profit_votAg_pop_comp.png)
 
 * ***Best Director***
 
